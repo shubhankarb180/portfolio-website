@@ -1,16 +1,12 @@
-import logo from "./logo.svg";
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import "./App.css";
+import Home from './pages/HomePage';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Portfolio Website in progress
-        </p>
-      </header>
-    </div>
+const App = () => {
+  return(
+    <>
+      <Home />
+    </>
   );
 }
 
