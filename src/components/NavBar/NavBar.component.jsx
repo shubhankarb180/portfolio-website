@@ -69,10 +69,10 @@ const NavBar = () => {
       {/* Mobile Menu */}
       <div className={`mobile menu ${ menuToggle ? '' : 'hidden'}`}>
         <ul className="">
-          <li className="block text-sm px-2 py-4 text-white bg-gray-500 font-semibold">Home</li>
-          <li className="block text-sm px-2 py-4 text-gray-500 hover:text-white transition duration-300">Portfolio</li>
-          <li className="block text-sm px-2 py-4 text-gray-500 hover:text-white transition duration-300">Resources</li>
+          <li className="block text-sm px-2 py-4 text-white bg-gray-800 font-semibold">Home</li>
           <li className="block text-sm px-2 py-4 text-gray-500 hover:text-white transition duration-300">About</li>
+          <li className="block text-sm px-2 py-4 text-gray-500 hover:text-white transition duration-300">Portfolio</li>
+          <li className="block text-sm px-2 py-4 text-gray-500 hover:text-white transition duration-300">Resources</li>          
         </ul>
       </div>
     </nav>
