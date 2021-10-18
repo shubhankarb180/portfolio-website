@@ -1,5 +1,6 @@
 import React, {useState} from "react";
-import logo from "../../assets/img/DP.jpg";
+import logo from "../../assets/img/logo192.png";
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
 
@@ -16,9 +17,6 @@ const NavBar = () => {
           <div className="flex">
             <a href="#k" className="flex items-center py-4 px-2">
               <img src={logo} alt="Logo" className="h-8 w-8 mr-2" />
-              <span className="font-semibold text-white text-lg">
-                Navigation
-              </span>
             </a>
           </div>
           <div className="hidden md:flex items-center space-x-1">
@@ -26,25 +24,25 @@ const NavBar = () => {
               href="j"
               className="py-4 px-2 text-white border-b-4 border-white font-semibold"
             >
-              Home
+              <Link to='/'>Home</Link>
             </a>
             <a
               href="j"
-              className="py-4 px-2 text-gray-500 hover:text-white font-semibold transition duration-300"
+              className="py-4 px-2 text-gray-500 hover:text-black hover:bg-white rounded-md font-semibold transition duration-300"
             >
-              About
+              <Link to='/about'>About</Link>
             </a>
             <a
               href="j"
-              className="py-4 px-2 text-gray-500 hover:text-white font-semibold transition duration-300"
+              className="py-4 px-2 text-gray-500 hover:text-black hover:bg-white rounded-md font-semibold transition duration-300"
             >
-              Portfolio
+              <Link to='/portfolio'>Portfolio</Link>
             </a>
             <a
               href="j"
-              className="py-4 px-2 text-gray-500 hover:text-white font-semibold transition duration-300"
+              className="py-4 px-2 text-gray-500 hover:text-black hover:bg-white rounded-md font-semibold transition duration-300"
             >
-              Resources
+              <Link to='/resources'>Resources</Link>
             </a>
           </div>
           {/* <!-- Mobile menu button --> */}
